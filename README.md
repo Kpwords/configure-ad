@@ -61,17 +61,41 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 
-- Login To "Client-1" And Ping DC-1's IP Address
-- The Ping Will Fail
-- Login To Domain Controller And Enable ICMv4 On Local Windows Firewall
-- Step 4
+- Login To DC-1, Install Active Directory Domain Services
+- Promote As a DC, Create Domain.
+- Program Will Restart, Log Back Into The DC
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/agn8Wg1" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/AGx8AHN.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zu4ldNl.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2MzDcqu.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+
+
+- In Active Directory Users And Computers, Create An Organizational Unit Called "Employees
+- Create A New OU Named "Admins"
+- Create A New Employee Named "Jane_Admins"
+- Add Jane_Admins To The "Domain Admins"
+- Log Out/ Close Connection To DC-1 And Log Back In As "mydomain.com/Jane_Admins"
+
+<br />
+
+
+<p>
+<img src="https://i.imgur.com/nElbLB0.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6nB8ibl.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/cxsFIkK.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dC2GubE.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XiuUM8O.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/cTZIBed.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ib8yhpx.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
-<br />
