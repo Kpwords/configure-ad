@@ -6,9 +6,9 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
+<h2>Active Directory Model</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+<img src="https://i.imgur.com/h6oWwXc.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>   <img src="https://i.imgur.com/VdApwUY.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -32,18 +32,39 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Create Resource Group
+- Create Virtual Network And Subnet
+- Create Domain Controller Virtual Machine (Windows Server 2022) Named DC-1
+- Set Domain Controller NIC's Private IP Addresses To "Static"
+- Create The Client Virtual Machine (Windows 10) Named "Client-1)
+
+
+<img src="https://i.imgur.com/8yAGtXV.png" height="70%" width="50%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/UzSVso4.png" height="70%" width="50%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/2WEiXRd.png" height="70%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Login To "Client-1" And Ping DC-1's IP Address
+- The Ping Will Fail
+- Login To Domain Controller And Enable ICMv4 On Local Windows Firewall
+- Check "Client-1" Again To Make Sure "Ping" Was Successful
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/kBoBzdF.png" height="70%" width="70%" alt="Disk Sanitization Steps"/><img src="https://i.imgur.com/mN19ET5.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/kyzeDhD.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Login To "Client-1" And Ping DC-1's IP Address
+- The Ping Will Fail
+- Login To Domain Controller And Enable ICMv4 On Local Windows Firewall
+- Step 4
 </p>
 <br />
 
